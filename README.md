@@ -15,6 +15,10 @@ A growing collection of **Google Earth Engine** scripts and notes for learning a
 - What it does: Loads Sentinel‑2 SR images for an AOI, builds a median composite, computes NDVI, and displays RGB + NDVI layers.
 - Notes: Simple cloud filtering using `CLOUDY_PIXEL_PERCENTAGE` (kept basic for learning).
 
+### 2) Water / Flood Mask (NDWI) — Basic
+- File: `scripts/water_mask_ndwi_sentinel2.js`
+- What it does: Computes NDWI from Sentinel‑2 (Green vs NIR), applies a simple threshold to highlight water-like pixels, and estimates water area inside the AOI.
+- Notes: Threshold-based mask (tune for your region/event). For flood studies, compare pre/post dates.
 ## How to run
 1. Open Google Earth Engine Code Editor: https://code.earthengine.google.com/
 2. Create a new script
